@@ -24,7 +24,10 @@
     }
     html, body{
       margin:0;
+      padding:0;
+      width:100%;
       height:100%;
+      overflow:hidden;
       background:#000;
       color:#eaf4ff;
       font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
@@ -115,7 +118,7 @@
       white-space:nowrap;
     }
 
-    /* Game layout */
+    /* Game layout full screen */
     #gameWrapper{
       position:fixed;
       inset:0;
@@ -123,11 +126,13 @@
       align-items:center;
       justify-content:center;
       background:#02040a;
+      z-index:0;
     }
     #gameContainer{
-      width:min(100vw, 1280px);
-      height:min(100vh, 720px);
-      aspect-ratio:4/3;
+      width:100vw;
+      height:100vh;
+      max-width:100vw;
+      max-height:100vh;
       background:#000;
       box-shadow:0 0 25px rgba(0,0,0,.9);
       display:flex;
@@ -141,6 +146,8 @@
       text-shadow:0 0 6px rgba(94,225,255,.7);
       letter-spacing:.04em;
       opacity:.9;
+      text-align:center;
+      padding:0 12px;
     }
 
     @media (max-width:600px){
@@ -151,10 +158,6 @@
       #staticSlideMenu{
         width:88px;
         height:88px;
-      }
-      #gameContainer{
-        width:100vw;
-        height:calc(100vh - 16px);
       }
     }
   </style>
@@ -292,7 +295,7 @@
       });
     })();
 
-    // Ruffle player setup
+    // Ruffle player setup full screen
     window.RufflePlayer = window.RufflePlayer || {};
 
     window.addEventListener("load", () => {
@@ -320,9 +323,9 @@
   <div class="seo-hidden" aria-hidden="true">
     <h1>Age of War 2 Unblocked Game Online</h1>
     <p>
-      Play Age of War 2 unblocked game in your browser with Ruffle on StaticQuasar931. 
-      This classic strategy defense game lets you evolve through ages, upgrade your units, 
-      and protect your base while attacking your enemy. Age of War 2 unblocked is designed 
+      Play Age of War 2 unblocked game in your browser with Ruffle on StaticQuasar931.
+      This classic strategy defense game lets you evolve through ages, upgrade your units,
+      and protect your base while attacking your enemy. Age of War 2 unblocked is designed
       to work at school, work, or home on most modern devices and Chromebooks.
     </p>
     <p>
@@ -332,8 +335,8 @@
       even without the original Flash plugin.
     </p>
     <p>
-      Keywords: Age of War 2 unblocked game, Age of War 2 unblocked g@me, school friendly 
-      strategy games, defense games unblocked, classic Flash games unblocked, StaticQuasar931 
+      Keywords: Age of War 2 unblocked game, Age of War 2 unblocked g@me, school friendly
+      strategy games, defense games unblocked, classic Flash games unblocked, StaticQuasar931
       unblocked games list, play at school, Ruffle Flash emulator.
     </p>
   </div>
